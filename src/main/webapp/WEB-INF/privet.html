@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Website</title>
+    <link rel="stylesheet" href="./css.css">
+    <style>
+        /* Файл styles.css */
+
+        /* Общие стили */
+        body{
+            width: 100%;
+            height: 80vh;
+            background: darkolivegreen;
+        }
+        .header{
+            height: 90px;
+            background: #555555;
+        }
+        #header__logo{
+            color: maroon;
+        }
+        .container__navigatiion a{
+            color: black;
+        }
+        h1 {
+            color: black;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Стили для шапки сайта */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Стили для секции фильмов */
+        #movies {
+            margin-top: 50px;
+        }
+
+        .movie {
+            margin: 0 auto;
+            width: 800px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .movie img {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .movie-details {
+            flex-grow: 1;
+        }
+
+        .movie-details h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .movie-details p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Стили для секции расписания */
+        #schedule {
+            margin-top: 50px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Стили для секции контактов */
+        #contacts {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+<!-- Шапка сайта -->
+<header class="header">
+    <h1 class="header__logo">Cinema Theatre</h1>
+    <nav class="container__navigatiion">
+        <a href="#">Главная</a>
+        <a href="#">Расписание</a>
+        <a href="#">Билеты</a>
+        <a href="#">Контакты</a>
+        <!--            <ul>-->
+        <!--                <li><a href="#">Главная</a></li>-->
+        <!--                <li><a href="#">Расписание</a></li>-->
+        <!--                <li><a href="#">Билеты</a></li>-->
+        <!--                <li><a href="#">Контакты</a></li>-->
+        <!--            </ul>-->
+    </nav>
+    </div>
+</header>
+
+<!-- Основное содержимое -->
+<main>
+    <!-- Секция фильмов -->
+    <section id="movies">
+        <div class="container">
+            <h2>Фильмы: </h2>
+            <div class="movie">
+                <img src="https://avatars.mds.yandex.net/i?id=edf66f1d6bc9e14a69b4fc80abbeed8d05311da7-9221923-images-thumbs&n=13" alt="Movie 1">
+                <div class="movie-details">
+                    <h3>65</h3>
+                    <p>«65» — научно-фантастический остросюжетный боевик режиссёров Скотта Бека и Брайана Вудса, главные роли в котором играют Адам Драйвер и Ариана Гринблат.
+                        В фильме рассказывается о попадании на Землю
+                        65 миллионов лет назад представителей внеземной цивилизации, столкнувшихся на планете со множеством опасностей, однако сумевших улететь обратно.</p>
+                    <a href="https://kinomax.ru/watch-own-film" class="btn">Купить билет</a>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="https://avatars.mds.yandex.net/i?id=d301aadb49dd1869fe320c0bdb82dca7c0116c7d-9146178-images-thumbs&n=13" alt="Movie 2">
+                <div class="movie-details">
+                    <h3>Аквамен и потерянное царство</h3>
+                    <p>"Аквамен и затерянное королевство" - грядущий американский фильм о супергероях, основанный на персонаже DC, Аквамене. </p>
+                    <a href="https://kinomax.ru/watch-own-film" class="btn">Купить билет</a>
+                </div>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="https://avatars.mds.yandex.net/i?id=19108c7b09bb9679eb51c5d639abb2a501c36fb4-10548602-images-thumbs&n=13" alt="Movie 3">
+            <div class="movie-details">
+                <h3>Трансформеры восхождение звероботов </h3>
+                <p>«Трансформеры: Восхождение Звероботов» (англ. Transformers: Rise of the Beasts) — американский научно-фантастический боевик Стивена Кейпла-младшего, основанный на линии игрушек «Трансформеры» и мультсериале «Битвы Зверей».  </p>
+                <a href="https://kinomax.ru/watch-own-film" class="btn">Купить билет</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция расписания -->
+    <section id="schedule">
+        <div class="container">
+            <h2>Расписание: </h2>
+            <table>
+                <tr>
+                    <th>Фильмы</th>
+                    <th>Время</th>
+                    <th>Цена</th>
+                </tr>
+                <tr>
+                    <td>65</td>
+                    <td>10:00, 14:00, 18:00</td>
+                    <td>850р</td>
+                </tr>
+                <tr>
+                    <td>Аквамен и потерянное царство</td>
+                    <td>11:00, 15:00, 19:00</td>
+                    <td>850р</td>
+                </tr>
+                <tr>
+                    <td>Трансформеры восхождение звероботов</td>
+                    <td>11:00, 15:00, 19:00</td>
+                    <td>900р</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Адрес: метро Кожуховская, Южнопортовая улица 5с1,  бизнес центр Золотое кольцо, 4- этаж кабинет 441А.</p>
+            <p>Телефон: +7 991 224 50 87</p>
+            <p>cinematheatre@gmail.com</p>
+        </div>
+    </section>
+</main>
+<!-- Подвал сайта -->
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Кинотеатр. Все права защищены.</p>
+    </div>
+</footer>
+</body>
+</html>

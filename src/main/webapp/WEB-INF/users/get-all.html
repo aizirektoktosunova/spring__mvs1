@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    table {
+        margin: auto; /* Устанавливаем автоматические отступы по бокам */
+        border-collapse: collapse; /* Объединяем границы ячеек */
+        width: 50%; /* Задаем ширину таблицы */
+    }
+    th, td {
+        border: 1px solid black; /* Устанавливаем границы ячеек */
+        padding: 8px; /* Устанавливаем внутренний отступ в ячейках */
+        text-align: center; /* Выравниваем текст по центру */
+    }
+</style>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>NAME </th>
+        <th>AGE</th>
+    </tr>
+    <tr>
+        <tr th:each="us:${userlist}">
+    <td th:text="${us.id}"></td>
+    <td th:text="${us.name}"></td>
+    <td th:text="${us.age}"></td>
+
+</table>
+
+</body>
+</html>

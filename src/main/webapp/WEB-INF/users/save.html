@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    form,input {
+
+        text-align: center;
+        width: auto;
+    }
+    button{
+        color: #af4c54;
+    }
+
+
+
+</style>
+<body>
+<form th:object="${user}"
+      th:action="@{save}"
+      th:method="post">
+    <input th:text="id" th:field="${user.id}" placeholder="id">
+    <br>
+    <input th:text="name" th:field="*{name}" placeholder="name">
+    <br>
+    <input th:text="age" th:field="*{age}" placeholder="age">
+    <br>
+    <br>
+    <button class="bubbly-button">Click me!</button>
+
+</form>
+
+</form>
+
+</body>
+</html>
